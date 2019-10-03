@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.esprit</groupId>
+	<artifactId>maven-web</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>maven-web</name>
+	<description>maven-web</description>
+ 
+	<distributionManagement>
+		<snapshotRepository>
+			<id>maven-snapshots</id>
+			<url>http://127.0.0.1:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+		<repository>
+			<id>maven-snapshots</id>
+			<url>http://127.0.0.1:8081/repository/maven-snapshots/</url>
+		</repository>
+	</distributionManagement>
+
+<!-- download artifacts from this repo -->
+<repositories>
+ <repository>
+  <id>maven-public</id>
+  <url>http://127.0.0.1:8081/repository/maven-public/</url>
+  <releases>
+   <enabled>true</enabled>
+  </releases>
+
+  <snapshots>
+   <enabled>true</enabled>
+  </snapshots>
+ </repository>
+</repositories>
+
+<!-- download plugins from this repo -->
+<pluginRepositories>
+ <pluginRepository>
+  <id>maven-public</id>
+  <url>http://127.0.0.1:8081/repository/maven-public/</url>
+  <releases>
+   <enabled>true</enabled>
+  </releases>
+  <snapshots>
+   <enabled>true</enabled>
+  </snapshots>
+ </pluginRepository>
+</pluginRepositories>
+	
+	<properties>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+	</properties>
+ 
+</project>
