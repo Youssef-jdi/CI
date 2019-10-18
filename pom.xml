@@ -10,12 +10,12 @@
  
 	<distributionManagement>
 		<snapshotRepository>
-			<id>maven-snapshots</id>
-			<url>http://127.0.0.1:8081/repository/maven-snapshots/</url>
+			<id>deployment</id>
+			<url>http://localhost:8081/repository/CI/</url>
 		</snapshotRepository>
 		<repository>
-			<id>maven-snapshots</id>
-			<url>http://127.0.0.1:8081/repository/maven-snapshots/</url>
+			<id>deployment</id>
+			<url>http://localhost:8081/repository/CI/</url>
 		</repository>
 	</distributionManagement>
 
@@ -23,7 +23,7 @@
 <repositories>
  <repository>
   <id>maven-public</id>
-  <url>http://127.0.0.1:8081/repository/maven-public/</url>
+  <url>http://localhost:8081/repository/CI/</url>
   <releases>
    <enabled>true</enabled>
   </releases>
@@ -38,7 +38,7 @@
 <pluginRepositories>
  <pluginRepository>
   <id>maven-public</id>
-  <url>http://127.0.0.1:8081/repository/maven-public/</url>
+  <url>http://localhost:8081/repository/CI/</url>
   <releases>
    <enabled>true</enabled>
   </releases>
