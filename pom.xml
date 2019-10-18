@@ -22,7 +22,7 @@
 <!-- download artifacts from this repo -->
 <repositories>
  <repository>
-  <id>maven-public</id>
+  <id>deployment</id>
   <url>http://localhost:8081/repository/CI/</url>
   <releases>
    <enabled>true</enabled>
@@ -37,7 +37,7 @@
 <!-- download plugins from this repo -->
 <pluginRepositories>
  <pluginRepository>
-  <id>maven-public</id>
+  <id>deployment</id>
   <url>http://localhost:8081/repository/CI/</url>
   <releases>
    <enabled>true</enabled>
